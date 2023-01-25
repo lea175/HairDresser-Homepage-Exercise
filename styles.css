@@ -1,21 +1,16 @@
 
-
-
 * {
     font-family: 'Be Vietnam Pro', sans-serif;
     list-style: none;
     text-decoration: none;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 1px;
     box-sizing: border-box;
+    padding: 0;
 }
 
 body {
-    background-color: lightgreen;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 5%;
-    margin-right: 5%;
+    background-color: #FFFFFF;
     padding: 0;
 }
 
@@ -25,9 +20,9 @@ header > img {
 }
 
 nav {
-    background-color: aquamarine;
-    border: 2px solid blueviolet;
-    padding: 1rem 0;
+    background-color: black;
+    border: 2px solid black;
+    padding: 1.5rem;
 }
 ul {
     gap: 1rem;
@@ -41,16 +36,16 @@ ul {
 }
 
 ul a:hover {
-    color: red;
-    transition: ease-in-out 100ms;
+    color: #EBEBED;
+    transition: ease-in-out 10ms;
 }
 
 a:link {
-    color: black;
+    color: white;
 }
 
 a:visited {
-    color: black;
+    color: white;
 }
 
 .image-container {
@@ -93,11 +88,12 @@ a:visited {
 
  .image-container > img {
     max-width: 100%;
+    border-radius: 8px;
  }
 
 .image-container > h3 {
     position: absolute;
-    color: red;
+    color: black;
     left: 26%;
     top: 40%;
     opacity: 0;
@@ -120,7 +116,6 @@ main section, article {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 1rem;
-    background-color: pink;
 }
 
 /*book session*/
@@ -130,14 +125,19 @@ section {
 }
 
 .form-container {
+    padding: 1rem;
     width: 25rem;
-    border: 1px solid black;
+    border: 3px solid #030F96;
+    /* background-color: rgb(212, 245, 245); */
+    border-radius: 8px;
     position: relative;
 }
 
 label {
     position: absolute;
     left: 20px;
+    color: #030F96;
+    font-weight: bold;
 }
 
 input {
@@ -145,8 +145,9 @@ input {
     font-size: large;
     width: 90%;
     height: 2.5rem;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.8rem;
     border-radius: 0.5em;
+    box-shadow: 2px 2px 4px 1px gray
 }
 
 button {
@@ -156,15 +157,15 @@ button {
     margin-top: 0.6rem;
     margin-bottom: 1.3rem;
     transition: ease-in-out 250ms;
-    color: black;
-    background-color: lightblue;
+    color: white;
+    background-color: black;
     border: 1px solid black;
 }
 button:hover {
     cursor: pointer;
-    color: lightblue;
-    background-color: black;
-    border: 1px solid lightblue;
+    color: white;
+    background-color: #030F96;
+    border: 1px solid #030F96;
 }
 
 /*book session*/
@@ -175,12 +176,17 @@ button:hover {
 }
 
 footer {
-    background-color: aquamarine;
+    background-color: black;
+    border: black;
+    color: white;
+    padding: 3rem;
 }
 
 @media (min-width: 40em) {
     .conatainer-main {
         grid-template-columns: repeat(3,1fr);
+        border: 1px solid black;
+        padding: 0 1rem;
     }
         footer {
             display: flex;

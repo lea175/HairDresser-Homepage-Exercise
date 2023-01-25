@@ -7,6 +7,7 @@
     text-decoration: none;
     text-align: center;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 body {
@@ -52,6 +53,66 @@ a:visited {
     color: black;
 }
 
+.image-container {
+    position: relative;
+    margin: 1em;
+    background-color: gray;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    top:1.25em;
+    bottom:1.25em;
+    left:1.25em;
+    right:1.25em;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scale(0, 1);
+    transition: ease-in-out 250ms;
+}
+
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    transform: scale(1, 0);
+    transition: ease-in-out 250ms;
+}
+
+.image-container:hover::before {
+    transform: scale(1.05, 1);
+}
+.image-container:hover::after {
+    transform: scale(1, 1.05);
+}
+
+ .image-container > img {
+    max-width: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+ }
+
+.image-container > h3 {
+    position: absolute;
+    color: red;
+    left: 26%;
+    top: 40%;
+    opacity: 0;
+    transition: ease-in-out 250ms;
+}
+.image-container:hover > h3 {
+    opacity: 1;
+}
+
+.image-container:hover > img {
+    opacity: 0.4;
+}
+
 
 h1 {
     font-size: 2rem;
@@ -69,20 +130,23 @@ main section, article {
     gap: 1rem;
 }
 
+footer {
+    background-color: aquamarine;
+}
+
 @media (min-width: 40em) {
     .conatainer-main {
         grid-template-columns: repeat(3,1fr);
     }
+        footer {
+            display: flex;
+        }
+        footer>div {
+            flex: 1;
+        }
 }
 
-footer {
-background-color: aquamarine;
-display: flex;
-}
 
-footer > div {
-    flex: 1;
-}
 
 /*do the main section (the three columns) as cards. Use the ::before and ::after
 to change the images opacity and give them a cool effeect. 

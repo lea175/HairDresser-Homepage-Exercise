@@ -56,7 +56,6 @@ a:visited {
 .image-container {
     position: relative;
     margin: 1em;
-    background-color: gray;
 }
 
 .image-container::before {
@@ -94,7 +93,6 @@ a:visited {
 
  .image-container > img {
     max-width: 100%;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
  }
 
 .image-container > h3 {
@@ -125,6 +123,52 @@ main section, article {
     background-color: pink;
 }
 
+/*book session*/
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    width: 25rem;
+    border: 1px solid black;
+    position: relative;
+}
+
+label {
+    position: absolute;
+    left: 20px;
+}
+
+input {
+    text-align: left;
+    font-size: large;
+    width: 90%;
+    height: 2.5rem;
+    margin-bottom: 0.7rem;
+    border-radius: 0.5em;
+}
+
+button {
+    border-radius: 0.5em;
+    padding: 10px 14px;
+    font-size: 17px;
+    margin-top: 0.6rem;
+    margin-bottom: 1.3rem;
+    transition: ease-in-out 250ms;
+    color: black;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+button:hover {
+    cursor: pointer;
+    color: lightblue;
+    background-color: black;
+    border: 1px solid lightblue;
+}
+
+/*book session*/
+
 .conatainer-main {
     display: grid;
     gap: 1rem;
@@ -146,9 +190,3 @@ footer {
         }
 }
 
-
-
-/*do the main section (the three columns) as cards. Use the ::before and ::after
-to change the images opacity and give them a cool effeect. 
-
-*/

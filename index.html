@@ -26,12 +26,30 @@
             </ul>
         </nav>
     <main>
-        <section class="carousel">
-            <h1>Promotional banner</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section>
+            <div class="form-container">
+                <h1>Book a session!</h1>
+                            <form action="" method="get">
+                                <div class="name">
+                                <label for="name">Name</label> <br>
+                                <input type="text" name="name" id="name" required> 
+                                </div>
+                                <div class="surname">
+                                <label for="surname">Surname</label> <br>
+                                <input type="text" name="surname" id="surname" required>
+                                </div>
+                                <div class="email">
+                                    <label for="email">E-mail</label> <br>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                <div class="date">
+                                    <label for="date">Pick date:</label>                    
+                                    <input type="date" id="date" 
+                                    name="book-date" value="2023-07-22" min="2023-01-01" max="2023-12-31">
+                                </div>
+                                <button>BOOK</button> 
+                            </form>
+            </div>
         </section>
 
         <div class="conatainer-main">
@@ -74,7 +92,7 @@
 
     <footer>
             <div id="footer-img">
-                <img src="images/Artboard 22.png" alt="footer logo image" width="70px">
+                <img src="images/Artboard 23.png" alt="footer logo image" width="100px">
             </div>
             <div>
                 <p>Copyright Notice</p>

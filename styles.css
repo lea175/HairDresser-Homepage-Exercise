@@ -51,6 +51,8 @@ a:visited {
 .image-container {
     position: relative;
     margin: 1em;
+    background-color: black;
+    border-radius: 8px;
 }
 
 .image-container::before {
@@ -87,14 +89,15 @@ a:visited {
 }
 
  .image-container > img {
-    max-width: 100%;
+    width: 280px;
+    height: 420px;
     border-radius: 8px;
  }
 
 .image-container > h3 {
     position: absolute;
-    color: black;
-    left: 26%;
+    color: white;
+    left: 33%;
     top: 40%;
     opacity: 0;
     transition: ease-in-out 250ms;
